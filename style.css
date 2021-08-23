@@ -1,0 +1,103 @@
+header {
+  margin: auto;
+  text-align: center;
+}
+
+body {
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+.mission {
+  border-style: ridge;
+  border-color: white;
+  border-width: 5px;
+}
+
+.donation {
+  background-color: lawngreen;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  font-size: 24px;
+  margin-right: 20px;
+}
+.donation:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+}
+
+.nominate {
+  background-color: tomato;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  font-size: 24px;
+}
+.nominate:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+}
+
+.sponsor {
+  background-color: rgb(240, 255, 109);
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  font-size: 24px;
+  margin-left: 20px;
+}
+.sponsor:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-content: left left;
+  margin: auto;
+  width: 200px;
+  height: auto;
+}
+.help1 {
+  max-width: 100%;
+  height: auto;
+}
+.help2 {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  margin: auto;
+  padding: 20px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 5px;
+}
+
+.copyright {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
