@@ -3,10 +3,17 @@ header {
   text-align: center;
 }
 
-body {
-  background-color: gray;
-  color: #fff;
+#container {
+  background-color: #7282ff;
+  color: black;
   text-align: center;
+  border-radius: 4px;
+  width: 95%;
+  height: 100%;
+  /* Give room for footers original position */
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
@@ -15,13 +22,20 @@ h2 {
 
 h3 {
   text-decoration: underline;
-  font-size: 24px;
+  font-size: 30px;
 }
 
-.mission {
+/* .mission {
   border-style: ridge;
   border-color: white;
   border-width: 5px;
+} */
+
+.card_section {
+  border-style: solid;
+  border-width: 3px 0px 3px 0px;
+  border-color: white;
+  font-size: 21px;
 }
 
 .donation {
@@ -70,6 +84,7 @@ h3 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .logo {
@@ -80,6 +95,12 @@ h3 {
   width: 200px;
   height: auto;
 }
+
+/* DRY Code (Don't repeat yourself). Classess make it where you can reuse styling on anything on that class.
+ I would consider these help cards repeatable
+
+ See example .help below
+
 .help1 {
   max-width: 100%;
   height: auto;
@@ -87,14 +108,46 @@ h3 {
 .help2 {
   max-width: 100%;
   height: auto;
+} */
+
+.help {
+  max-width: 100%;
+  height: auto;
+  text-align: left;
+  border-bottom: solid 1px white;
+  font-size: 21px;
 }
 
+.help_container {
+  display: flex;
+}
+
+.help h3 {
+  text-align: center;
+}
+
+.help_picture {
+  width: 40%;
+  height: auto;
+  margin: 10px;
+}
+
+.help_picture img {
+  width: 100%;
+}
+
+/* Made fixed to bottom of screen */
 footer {
-  margin: auto;
-  padding: 20px;
+  /* margin: auto;
+  padding: 20px;*/
   border-style: solid;
   border-color: #fff;
   border-width: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 94%;
+  background-color: #64cdff;
+  border-radius: 4px;
 }
 
 .copyright {
